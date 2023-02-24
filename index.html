@@ -5,7 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootcamp DNC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        #navHeader {
+            width: 100%;
+            border: 0;
+            height: 100px;
+            background-color: #303030;
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.7);
+            
+        }
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+        #navHeader div a {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 25px;
+            line-height: 30px;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+        #headerMenu{
+            display: flex;
+            width: 63%;
+            justify-content: space-around;
+            align-items:center;
+            margin-left: 3%;
+           
+        }
+        #navHeader button {
+            margin-right: 130px;
+            background: #0C70F2;
+            box-shadow: 4px 3px 5px rgba(12, 112, 242, 0.25);
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            color: #FFFFFF;
+            border: 0px;
+            height: 45px;
+            width: 100px;     
+            cursor: pointer;       
+        }
+        #headerMenu img {
+            width: 130px;
+            
+        }
+
+        #navHeader div a:hover {
+            color: gray;
+            }
+    </style>
 </head>
 
 </body>
+    <nav id="navHeader">
+        <div id="headerMenu">
+           <a href="https://www.escoladnc.com.br/" target="_blank"><img src="img/dnc.png" width="100px"></a>
+            <a href="">Home</a> 
+            <a href="">Últimas Edições</a>
+            <a href="">Requisitos para Participar</a>
+        </div>
+        <button>Login</button>
+    </nav>
 </html>
