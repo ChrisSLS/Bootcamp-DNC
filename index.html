@@ -8,64 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
     
-    <style>
-        #navHeader {
-            width: 100%;
-            border: 0;
-            height: 100px;
-            background-color: #303030;
-            display: flex;
-            justify-content:space-between;
-            align-items: center;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.7);
-            
-        }
-        body {
-            margin: 0px;
-            padding: 0px;
-        }
-        #navHeader div a {
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 25px;
-            line-height: 30px;
-            color: #FFFFFF;
-            text-decoration: none;
-        }
-        #headerMenu{
-            display: flex;
-            width: 63%;
-            justify-content: space-around;
-            align-items:center;
-            margin-left: 3%;
-           
-        }
-        #navHeader button {
-            margin-right: 130px;
-            background: #0C70F2;
-            box-shadow: 4px 3px 5px rgba(12, 112, 242, 0.25);
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 20px;
-            line-height: 24px;
-            color: #FFFFFF;
-            border: 0px;
-            height: 45px;
-            width: 100px;     
-            cursor: pointer;       
-        }
-        #headerMenu img {
-            width: 130px;
-            
-        }
-
-        #navHeader div a:hover {
-            color: gray;
-            }
-    </style>
 </head>
 
 </body>
@@ -78,4 +22,56 @@
         </div>
         <button>Login</button>
     </nav>
+    <!--Cabeçalho Central da Página-->
+    <section>
+        <header>
+            <h1>Bootcamp DNC</h1>
+            <h2>Esse será um evento exclusivo para todos os alunos<br> da DNC, que querem <span class="invert">acelerar a 
+                carreira</span> com uma<br> semana intensiva de conteúdo de mercado entre<br><span class="invert">BACK-END, FRONT-END & BANCO DE DADOS.<br></span>
+            </h2>
+        </header>
+        <form>
+            <div class="formGroup">
+                <label>Nome:</label>
+                <input type="text" name="nome" placeholder="Insira seu nome aqui">
+            </div>
+
+            <div class="formGroup">
+                <label>Sobrenome:</label>
+                <input type="text" name="sobreNome" placeholder="Insira seu sobrenome aqui">
+            </div>
+
+            <div class="formGroup">
+                <label>Área de Interesse:</label>
+                <div class="checkboxItems">
+                    <input type="checkbox" value="frontEnd">
+                    <label>Front-End</label>
+                    <input type="checkbox" value="backEnd">
+                    <label>Back-End</label>
+                    <input type="checkbox" value="bancoDados">
+                    <label>Banco de Dados</label>
+
+                </div>
+                
+            </div>
+            <div class="formGroup">
+                <label>E-mail:</label>
+                <input type="email" name="nome" placeholder="Insira seu e-mail aqui" required>
+            </div>
+            <div class="formGroup">
+                <label>Telefone:</label>
+                <input type="tel" name="nome" required placeholder="(99)99999-9999">
+            </div>
+            <div class="formGroup">
+                <label>Insira uma frase criativa aqui:</label>
+                <input type="text" name="nome" placeholder="Qual frase você gostaria de falar? :D">
+           </div>
+           
+           <input type="submit" value="Cadastre-se">
+
+           
+
+        </form>
+    </section>
+    
 </html>
